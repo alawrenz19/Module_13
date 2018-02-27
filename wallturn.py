@@ -11,8 +11,6 @@ sensor_L = 18
 j = 3
 i = 4.0
 
-cool = time.time()
-while time.time() < time.time + 5:
   
 
 while RPL.digitalRead(sensor_R) and RPL.digitalRead(sensor_M) and RPL.digitalRead(sensor_L)== 1:
