@@ -14,10 +14,8 @@ i = 4.0
   
 
 while RPL.digitalRead(sensor_R) and RPL.digitalRead(sensor_M) and RPL.digitalRead(sensor_L)== 1:
-    PTW.state['d1'] = RPL.digitalRead(sensor_pin)
     RPL.servoWrite(motorR, 1000)
     RPL.servoWrite(motorL, 2000)
-    PTW.post()
     if RPL.digitalRead(sensor_R) or RPL.digitalRead(sensor_M) or RPL.digitalRead(sensor_L) == 0:
         break
 
