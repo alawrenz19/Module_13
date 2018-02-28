@@ -16,8 +16,14 @@ i = 4.0
 while RPL.digitalRead(sensor_R) and RPL.digitalRead(sensor_M) and RPL.digitalRead(sensor_L)== 1:
     RPL.servoWrite(motorR, 2000)
     RPL.servoWrite(motorL, 1000)
-    if RPL.digitalRead(sensor_R) or RPL.digitalRead(sensor_L) or  RPL.digitalRead(sensor_M) == 0:
+    if RPL.digitalRead(sensor_R) == 0:
         break
+    if RPL.digitalRead(sensor_M) == 0:
+        break
+    if RPL.digitalRead(sensor_L) == 0:
+        break
+
+
 
 while RPL.digitalRead(sensor_R) == 0:
     move = time.time()
