@@ -8,5 +8,5 @@ NumberL = int(raw_input("Left Motor > "))
 NumberR = int(raw_input("Right Motor > "))
 
 RPL.servoWrite(6, NumberR)
-RPL.servoWrite(2, NumberL)
+RPL.servoWrite(7, NumberL)
 
