@@ -26,28 +26,28 @@ while RPL.digitalRead(sensor_R) and RPL.digitalRead(sensor_M) and RPL.digitalRea
 while RPL.digitalRead(sensor_R) == 0:
     move = time.time()
     while time.time() < (move + i):
-        RPL.servoWrite(motorR, 1490)
-        RPL.servoWrite(motorL, 1520)
+        RPL.servoWrite(motorL, 1490)
+        RPL.servoWrite(motorR, 1520)
     while time.time() > (move + i):
-        RPL.servoWrite(motorR, 1460)
-        RPL.servoWrite(motorL, 1550)
+        RPL.servoWrite(motorL, 1460)
+        RPL.servoWrite(motorR, 1550)
 
 while RPL.digitalRead(sensor_L) == 0:
     run = time.time()
     while time.time() < (run + i):
-        RPL.servoWrite(motorR, 1520)
-        RPL.servoWrite(motorL, 1490)
+        RPL.servoWrite(motorL, 1520)
+        RPL.servoWrite(motorR, 1490)
 
     while time.time() > (run + i):
-        RPL.servoWrite(motorR, 1550)
-        RPL.servoWrite(motorL, 1460)
+        RPL.servoWrite(motorL, 1550)
+        RPL.servoWrite(motorR, 1460)
 
 while RPL.digitalRead(sensor_M) == 0:
     move = time.time()
     while time.time() < (move + i):
-        RPL.servoWrite(motorR, 1490)
-        RPL.servoWrite(motorL, 1520)
+        RPL.servoWrite(motorL, 1490)
+        RPL.servoWrite(motorR, 1520)
     while time.time() > (move + i):
-        RPL.servoWrite(motorR, 1460)
-        RPL.servoWrite(motorL, 1550)
+        RPL.servoWrite(motorL, 1460)
+        RPL.servoWrite(motorR, 1550)
 
