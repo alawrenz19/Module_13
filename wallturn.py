@@ -12,7 +12,8 @@ i = 6.0
 
   
 
-while RPL.digitalRead(sensor_R) and RPL.digitalRead(sensor_L)== 1:
+while True:
+  while RPL.digitalRead(sensor_R) and RPL.digitalRead(sensor_L)== 1:
     RPL.servoWrite(motorR, 2000)
     RPL.servoWrite(motorL, 1000)
 
