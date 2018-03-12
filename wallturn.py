@@ -22,7 +22,7 @@ while RPL.digitalRead(sensor_R) == 0:
         if time.time() > (move + i):
             RPL.servoWrite(motorL, 1000)
             RPL.servoWrite(motorR, 2000)
-            break
+            
 
 while RPL.digitalRead(sensor_L) == 0:
     run = time.time()
@@ -32,7 +32,7 @@ while RPL.digitalRead(sensor_L) == 0:
         if time.time() > (run + i):
             RPL.servoWrite(motorL, 1000)
             RPL.servoWrite(motorR, 2000)
-            break
+            
       
 while RPL.digitalRead(sensor_M) == 0:
     go = time.time()
@@ -42,8 +42,7 @@ while RPL.digitalRead(sensor_M) == 0:
         if time.time() > (go + i):
             RPL.servoWrite(motorL, 1000)
             RPL.servoWrite(motorR, 2000)
-            break
-    
+            
 
 
 
