@@ -10,10 +10,10 @@ sensor_L = 18
 j = 3
 
 
-while (True):
-    While RPL.digitalRead(sensor_R) and RPL.digitalRead(sensor_M) and RPL.digitalRead(sensor_L)== 1:
-    RPL.servoWrite(motorR, 2000)
-    RPL.servoWrite(motorL, 1000)
+
+While RPL.digitalRead(sensor_R) and RPL.digitalRead(sensor_M) and RPL.digitalRead(sensor_L)== 1:
+RPL.servoWrite(motorR, 2000)
+RPL.servoWrite(motorL, 1000)
 
 while (True):
     While RPL.digitalRead(sensor_R) == 0:
