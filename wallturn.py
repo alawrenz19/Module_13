@@ -20,10 +20,10 @@ sensor_M = 17
 sensor_L = 18
 j = 3
 
-while time.time()== time.time():
-	while RPL.digitalRead(sensor_R) and RPL.digitalRead(sensor_M) and RPL.digitalRead(sensor_L)== 1:
-    		RPL.servoWrite(motorR, 2000)
-    		RPL.servoWrite(motorL, 1000)
+RPL.servoWrite(motorR, 2000)
+RPL.servoWrite(motorL, 1000)
+
+while RPL.digitalRead(sensor_R) and RPL.digitalRead(sensor_M) and RPL.digitalRead(sensor_L)!= 1:
 	while RPL.digitalRead(sensor_R) == 0:
    		move = time.time()
    		while time.time() < (move + j):
