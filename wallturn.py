@@ -29,7 +29,7 @@ while RPL.digitalRead(sensor_R) or RPL.digitalRead(sensor_M) or RPL.digitalRead(
    		while time.time() < (move + j):
         		RPL.servoWrite(motorL, 1490)
         		RPL.servoWrite(motorR, 2000)
-		while time.time() > (move + j):
+		if time.time() > (move + j):
         		RPL.servoWrite(motorL, 1000)
         		RPL.servoWrite(motorR, 2000)
 	while RPL.digitalRead(sensor_L) == 0:
@@ -37,7 +37,7 @@ while RPL.digitalRead(sensor_R) or RPL.digitalRead(sensor_M) or RPL.digitalRead(
     		while time.time() < (run + j):
         		RPL.servoWrite(motorL, 1000)
         		RPL.servoWrite(motorR, 1510)
-		while time.time() > (run + j):
+		if time.time() > (run + j):
         		RPL.servoWrite(motorL, 1000)
         		RPL.servoWrite(motorR, 2000)
 	while RPL.digitalRead(sensor_M) == 0:
@@ -45,7 +45,7 @@ while RPL.digitalRead(sensor_R) or RPL.digitalRead(sensor_M) or RPL.digitalRead(
     		while time.time() < (go + j):
         		RPL.servoWrite(motorL, 1000)
         		RPL.servoWrite(motorR, 1510)
-		while time.time() > (go + j):
+		if time.time() > (go + j):
         		RPL.servoWrite(motorL, 1000)
         		RPL.servoWrite(motorR, 2000)
 
