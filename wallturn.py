@@ -33,7 +33,7 @@ while RPL.digitalRead(sensor_L) == 0:
             RPL.servoWrite(motorL, 1000)
             RPL.servoWrite(motorR, 2000)
             
- while RPL.digitalRead(sensor_M) == 0:
+while RPL.digitalRead(sensor_M) == 0:
     go = time.time()
     while time.time() < (go + j):
         RPL.servoWrite(motorL, 1000)
