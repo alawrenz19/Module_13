@@ -25,8 +25,8 @@ while RPL.digitalRead(sensor_R) == 0:
             RPL.servoWrite(motorR, 2000)
             
 while RPL.digitalRead(sensor_L) == 0:
-     run = time.time()
-     while time.time() < (run + j):
+    run = time.time()
+    while time.time() < (run + j):
         RPL.servoWrite(motorL, 1000)
         RPL.servoWrite(motorR, 1510)
         if time.time() > (run + j):
