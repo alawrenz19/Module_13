@@ -11,5 +11,5 @@ def forward():
     
 while sensor_1 > 200:
     move = time.time()
-    while time.time > (move + A)
+    while time.time > (move + A):
         forward()
