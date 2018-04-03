@@ -7,17 +7,6 @@ motorR = 6
 sensor_R = 16
 sensor_M = 17
 sensor_L = 18
-j = 3
-
-import RoboPiLib as RPL
-import time
-RPL.RoboPiInit("/dev/ttyAMA0",115200)
-
-motorL = 7
-motorR = 6
-sensor_R = 16
-sensor_M = 17
-sensor_L = 18
 j = 3.5
 
 RPL.servoWrite(motorR, 2000)
