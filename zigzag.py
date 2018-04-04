@@ -7,7 +7,7 @@ motorR = 6
 sensor_R = 16
 sensor_M = 17
 sensor_L = 18
-j = 3.5
+j = 1
 
 RPL.servoWrite(motorR, 2000)
 RPL.servoWrite(motorL, 1000)
