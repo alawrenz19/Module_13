@@ -46,7 +46,7 @@ while True:
     elif sensor_1 - sensor_2 > 80:
     	move = time.time()
         small_correct()
-   	    while time.time() > (move + A):
+   	while time.time() > (move + A):
              forward()
     elif sensor_2 - sensor_1 > 80:
     	move = time.time()
