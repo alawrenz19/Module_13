@@ -34,27 +34,12 @@ def large_correct():
     
 while True: 
     if sensor_1 > 400:
-    	move = time.time()
       	start_right()
-      	while time.time() > (move + A):
-            forward()
     elif sensor_1 > 200:
-    	move = time.time()
     	forward()
-    	while time.time() > (move + A):
-             forward()
     elif sensor_1 - sensor_2 > 80:
-    	move = time.time()
         small_correct()
-   	while time.time() > (move + A):
-             forward()
     elif sensor_2 - sensor_1 > 80:
-    	move = time.time()
         large_correct()
-        while time.time() > (move + A):
-             forward()
     else: 
-    	move = time.time()
         start_left()
-        while time.time() > (move + A):
-             forward()
