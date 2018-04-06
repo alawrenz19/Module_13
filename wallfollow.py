@@ -4,6 +4,8 @@ import time
 A = 1
 sensor_1 = RPL.analogRead(0)
 sensor_2 = RPL.analogRead(1)
+RPL.servoWrite(6, 1000)
+RPL.servoWrite(7, 2000)
 
 def forward():
     RPL.servoWrite(6, 1400)
