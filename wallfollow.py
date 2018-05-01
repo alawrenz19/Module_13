@@ -2,8 +2,6 @@ import RoboPiLib as RPL
 import time
 
 A = 1
-sensor_1 = RPL.analogRead(0)
-sensor_2 = RPL.analogRead(1)
 
 def forward():
     RPL.servoWrite(6, 1400)
