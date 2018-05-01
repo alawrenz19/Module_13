@@ -44,7 +44,7 @@ while True:
     elif RPL.analogRead(0) - RPL.analogRead(1) > 80:
     	move = time.time()
         small_correct()
-   		while time.time() > (move + A):
+   	while time.time() > (move + A):
              forward()
     elif RPL.analogRead(1) - RPL.analogRead(0) > 80:
     	move = time.time()
