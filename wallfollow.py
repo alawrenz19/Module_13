@@ -1,7 +1,9 @@
 import RoboPiLib as RPL
 import time
+RPL.RoboPiInit("/dev/ttyAMA0",115200)
 
-A = 1
+sensor_1 = RPL.analogRead(0)
+sensor_2 = RPL.analogRead(1)
 
 def forward():
     RPL.servoWrite(6, 1400)
@@ -29,22 +31,22 @@ def large_correct():
     print "LEFT correction"
     
 while True: 
-    if RPL.analogRead(0) > 400:
+    if sensor_1 > 400:
     	move = time.time()
       	start_right()
       	while time.time() > (move + A):
             forward()
-    elif RPL.analogRead(0) > 200:
+    elif sensor_1 > 200:
     	move = time.time()
     	forward()
     	while time.time() > (move + A):
              forward()
-    elif RPL.analogRead(0) - RPL.analogRead(1) > 80:
+    elif sensor_1 - sensor_2 > 80:
     	move = time.time()
         small_correct()
    	while time.time() > (move + A):
              forward()
-    elif RPL.analogRead(1) - RPL.analogRead(0) > 80:
+    elif sensor_2 - sensor_1 > 80:
     	move = time.time()
         large_correct()
         while time.time() > (move + A):
