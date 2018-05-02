@@ -37,10 +37,10 @@ while True:
     if sensor_1 or sensor_2 > 100:
       	start_right()
     
-    if sensor_1 and sensor_2 < 100 , sensor_1 and sensor_2 > 50
+    if sensor_1 and sensor_2 < 100 , sensor_1 and sensor_2 > 50:
         forward()
     
-    if sensor_1 or sensor_2 < 50
+    if sensor_1 or sensor_2 < 50:
         start_left()
         
         
