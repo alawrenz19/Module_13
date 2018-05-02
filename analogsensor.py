@@ -1,4 +1,4 @@
-mport RoboPiLib as RPL
+import RoboPiLib as RPL
 import time
 RPL.RoboPiInit("/dev/ttyAMA0",115200)
 
