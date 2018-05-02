@@ -11,7 +11,7 @@ def forward():
     print "Forward"
 def stop():
     RPL.servoWrite(6, 0)
-    RPL.servoWtire(7, 0)
+    RPL.servoWrite(7, 0)
     print "stop"
 def start_right():
     RPL.servoWrite(7, 1550)
