@@ -34,13 +34,13 @@ while True:
     sensor_1 = RPL.analogRead(0)
     sensor_2 = RPL.analogRead(1)
     
-    if sensor_1 or sensor_2 > 100:
+    if sensor_1 or sensor_2 > 200:
       	start_right()
     
-    if (sensor_1 and sensor_2 < 100) and (sensor_1 and sensor_2 > 50):
+    if (sensor_1 and sensor_2 < 200) and (sensor_1 and sensor_2 > 100):
         forward()
     
-    if sensor_1 or sensor_2 < 50:
+    if sensor_1 or sensor_2 < 100:
         start_left()
         
         
