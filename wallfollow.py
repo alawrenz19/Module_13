@@ -40,7 +40,7 @@ while True:
     elif sensor_1 > 50:
     	forward()
         
-    elif sensor_1 - sensor_2 > 80:
+    elif sensor_1 and sensor_2 > 80:
         small_correct()
 
     elif sensor_2 - sensor_1 > 80:
