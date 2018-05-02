@@ -10,6 +10,6 @@ def forward():
     print "Forward"
 
 while True: 
-  if sensor_1 > 300:
+  if sensor_2 > 300:
     forward()
 
