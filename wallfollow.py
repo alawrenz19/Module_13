@@ -37,7 +37,7 @@ while True:
     if sensor_1 > 400:
       	start_right()
       
-    elif sensor_1 > 200:
+    elif sensor_1 > 50:
     	forward()
         
     elif sensor_1 - sensor_2 > 80:
