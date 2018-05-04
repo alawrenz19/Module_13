@@ -13,11 +13,11 @@ def stop():
     RPL.servoWrite(6, 0)
     RPL.servoWrite(7, 0)
     print "stop"
-def start_right():
+def go_right():
     RPL.servoWrite(7, 1550)
     RPL.servoWrite(6, 1420)
     print "Turning Right"
-def start_left():
+def go_left():
     RPL.servoWrite(6, 1460)
     RPL.servoWrite(7, 1550)
     print "Turning Left"
@@ -58,9 +58,9 @@ while True:
     elif stop:
         stop()
     elif move_left:
-        start_left()
+        go_left()
     elif move_right:
-        start_right()
+        go_right()
     elif right:
         small_correct()
     elif left:
