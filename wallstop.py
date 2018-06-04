@@ -6,7 +6,7 @@ RPL.RoboPiInit("/dev/ttyAMA0",115200)
 
 motorL = 7
 motorR = 6
-sensor_pin = 16
+sensor_pin = 17
 i = 4.9
 
 while RPL.digitalRead(sensor_pin) == 1:
