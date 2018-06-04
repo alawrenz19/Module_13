@@ -4,9 +4,9 @@ import time
 import post_to_web as PTW
 RPL.RoboPiInit("/dev/ttyAMA0",115200)
 
-motorL = 1
-motorR = 7
-sensor_pin = 16
+motorL = 2
+motorR = 1
+sensor_pin = 17
 j = 3
 i = 5.
 
